@@ -2,7 +2,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright © 2017-2018 Ruben Van Boxem
+# Copyright © 2017-2019 Ruben Van Boxem
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -712,7 +712,7 @@ set(skia_sources
     src/pdf/SkClusterator.cpp
     src/pdf/SkDeflate.cpp
   # src/pdf/SkDocument_PDF_None.cpp
-    src/pdf/SkJpegInfo.cpp
+  # src/pdf/SkJpegInfo.cpp # already defined in SkJpegCodec
     src/pdf/SkKeyedImage.cpp
     src/pdf/SkPDFBitmap.cpp
     src/pdf/SkPDFCanon.cpp
