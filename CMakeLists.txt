@@ -61,6 +61,10 @@ if(CMAKE_COMPILER_IS_GNUCXX OR ${CMAKE_CXX_COMPILER_ID} MATCHES "Clang")
                             -Wno-restrict
                             -Wno-stringop-truncation
                             -Wno-cast-function-type)
+        if(CMAKE_CXX_COMPILER_VERSION VERSION_GREATER 9)
+          add_compile_options(-Wno-redundant-move
+                              -Wno-deprecated-copy)
+        endif()
       endif()
     endif()
     add_compile_options(-Wno-maybe-uninitialized)
